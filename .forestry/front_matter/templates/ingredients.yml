@@ -1,0 +1,19 @@
+---
+label: Ingredients
+hide_body: false
+is_partial: false
+fields:
+- type: select
+  config:
+    source:
+      type: documents
+    required: true
+- type: boolean
+  name: active_
+  label: Active?
+  description: Is this ingredient in use?
+- type: text
+  name: ingredient_name
+  label: Ingredient Name
+  config:
+    required: true
