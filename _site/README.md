@@ -1,1 +1,1 @@
-# mscc
+# dept-recipe
