@@ -1,0 +1,20 @@
+<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#risks" role="tab" aria-controls="home" aria-selected="true">RISKS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#assumptions" role="tab" aria-controls="profile" aria-selected="false">ASSUMPTIONS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#issues" role="tab" aria-controls="contact" aria-selected="false">ISSUES</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#dependancies" role="tab" aria-controls="contact" aria-selected="false">DEPENDANCIES</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="risks" role="tabpanel" aria-labelledby="home-tab">{% include riskTable.html %}</div>
+  <div class="tab-pane fade" id="assumptions" role="tabpanel" aria-labelledby="profile-tab">assumptions</div>
+  <div class="tab-pane fade" id="issues" role="tabpanel" aria-labelledby="contact-tab">issues</div>
+  <div class="tab-pane fade" id="dependancies" role="tabpanel" aria-labelledby="contact-tab">dependancies</div>
+</div>

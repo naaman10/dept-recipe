@@ -1,0 +1,125 @@
+---
+---
+// scss
+$dept-blue: #1A18F7;
+
+// styles
+@font-face {
+  font-family: FF Good Pro Cond;
+  font-display: fallback;
+  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/94898851-2b28-408d-a39d-8d35f6a5cd34.woff2") format("woff2"),url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/05bb53e7-b890-48d1-a526-cc16ccacd781.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Maison Neue;
+  font-display: fallback;
+  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Book.woff") format("woff");
+  font-weight: 300
+}
+
+@font-face {
+  font-family: Maison Neue;
+  font-display: fallback;
+  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Medium.woff") format("woff");
+  font-weight: 500
+}
+
+@font-face {
+  font-family: Maison Neue;
+  font-display: fallback;
+  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Bold.woff") format("woff");
+  font-weight: 600
+}
+
+body, html {
+  height: 100%;
+}
+p {
+  font-family: "Maison Neue", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5 {
+  font-family: FF Good Pro Cond;
+  font-weight: 600;
+  font-style: normal;
+}
+#header {
+  margin: 20px;
+  background-color: #f3f6f6;
+}
+#page-header {
+  padding-top: 40px;
+}
+.table-responsive {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header-title {
+  display: inline;
+}
+.header-title h1, .header-title .dropdown {
+  display: inline;
+  font-size: 150px;
+  font-weight: 800;
+}
+.navbar {
+  margin-right: auto;
+  margin-left: auto;
+  height: 71px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1240px;
+  border-bottom: 1px solid black;
+}
+.navbar-brand {
+  color: #272727;
+}
+.navbar-brand svg {
+  width: 87px;
+  height: 23px;
+}
+a.nav-link {
+  font-family: FF Good Pro Cond;
+  font-size: 1.4rem;
+  letter-spacing: .04em;
+  color: #272727;
+  text-transform: uppercase;
+}
+.low {
+  background-color: $dept-blue;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 10px;
+  color: white;
+}
+.low:hover,.high:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+.high {
+  background-color: #971817;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 10px;
+  color: white;
+}
+.low h2, .high h2 {
+  text-align: center;
+  font-size: 26px;
+}
+.nav-tabs {
+    border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: $dept-blue;
+  border: none;
+}
+#mainSection {
+  margin: 20px;
+}
+.activity {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
