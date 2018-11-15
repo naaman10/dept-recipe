@@ -17,3 +17,5 @@ fields:
   label: Ingredient Name
   config:
     required: true
+pages:
+- test.md
