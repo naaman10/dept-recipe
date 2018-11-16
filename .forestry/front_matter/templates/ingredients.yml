@@ -6,8 +6,18 @@ fields:
 - type: select
   config:
     source:
-      type: documents
+      type: simple
     required: true
+    options:
+    - Planning
+    - Research
+    - Exploration
+    - Information Architecture
+    - Design
+    - Prototyping
+    - Testing
+  label: Category
+  name: activityCategory
 - type: boolean
   name: active_
   label: Active?
