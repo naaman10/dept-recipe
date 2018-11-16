@@ -28,4 +28,5 @@ fields:
   config:
     required: true
 pages:
+- _posts/ethnographic-research.md
 - _posts/expert-review.md
