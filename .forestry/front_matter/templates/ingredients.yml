@@ -18,6 +18,7 @@ fields:
     - Testing
   label: Category
   name: activityCategory
+  default: Planning
 - type: boolean
   name: active_
   label: Active?
@@ -27,6 +28,16 @@ fields:
   label: Ingredient Name
   config:
     required: true
+- type: number
+  name: time_estimate
+  label: Time Estimate (Days)
+  config:
+    min: '1'
+    required: true
+- type: text
+  name: icon
+  label: icon
+  description: Insert the icon HTML from https://material.io/tools/icons/ <i class="material-icons">donut_large</i>
 pages:
 - _posts/ethnographic-research.md
 - _posts/expert-review.md
