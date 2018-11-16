@@ -9,7 +9,7 @@ sections:
   label: Ingredients
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - ingredients
 - type: jekyll-pages

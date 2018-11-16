@@ -27,3 +27,5 @@ fields:
   label: Ingredient Name
   config:
     required: true
+pages:
+- _posts/expert-review.md
