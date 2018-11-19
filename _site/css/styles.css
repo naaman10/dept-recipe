@@ -109,3 +109,26 @@ a.nav-link {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+button.activity.btn.btn-light {
+  text-align: left; }
+
+button.activity.btn.btn-light.active {
+  background-color: #95C5AC;
+  border-color: #95C5AC; }
+
+td input {
+  border: none;
+  color: #1A18F7;
+  width: auto; }
+
+#tableControl {
+  float: right; }
+
+#tableControl button.btn.btn-secondary {
+  background-color: white;
+  color: lightgrey;
+  border: none; }
+
+#tableControl button.btn.btn-secondary:hover {
+  color: #1A18F7; }

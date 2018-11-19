@@ -1,5 +1,5 @@
 ---
-title: UX RECIPE
+title: UX ALCHEMY
 permalink: "/recipe"
 layout: page
 ---
@@ -12,36 +12,10 @@ layout: page
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8">
-        <h2>I. Select Planning Activities</h2>
-        <div class="row">
-          {% for ingredient in site.ingredients %}
-            {% if ingredient.type == "Planning" %}
-              {% if ingredient.active == true %}
-              <div class="col-12 col-md-3">
-                <button class="activity btn btn-light">{{ingredient.name}}</button>
-              </div>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-        </div>
+        {% include ingredients.html %}
       </div>
       <div class="col-12 col-md-4">
-        <!-- Summary -->
+        {% include summary.html %}
       </div>
     </div>
   </div>

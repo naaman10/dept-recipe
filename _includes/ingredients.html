@@ -1,0 +1,22 @@
+<h2>I. Select Planning Ingredients</h2>
+<div class="row">
+  {% for post in site.posts %}
+    {% if post.activityCategory == "Planning" %}
+      {% if post.active_ == true %}
+      <input class="activityCheckbox" type="checkbox" data-estimate="{{post.time_estimate}}" data-rate="800"
+      data-name="{{post.ingredient_name}}" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> {{post.ingredient_name}} </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> {{post.ingredient_name}} </span>"/>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+<h2>II. Select Research Ingredients</h2>
+<div class="row">
+  {% for post in site.posts %}
+    {% if post.activityCategory == "Research" %}
+      {% if post.active_ == true %}
+      <input class="activityCheckbox" id="button{{post.ingredient_name | slugify}}" type="checkbox" data-estimate="{{post.time_estimate}}" data-rate="800"
+      data-name="{{post.ingredient_name}}" data-labelauty="{{post.ingredient_name}}"/>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

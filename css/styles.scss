@@ -2,6 +2,7 @@
 ---
 // scss
 $dept-blue: #1A18F7;
+$dept-green: #95C5AC;
 
 // styles
 @font-face {
@@ -122,4 +123,27 @@ a.nav-link {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+button.activity.btn.btn-light {
+  text-align: left;
+}
+button.activity.btn.btn-light.active {
+  background-color: $dept-green;
+  border-color: $dept-green;
+}
+td input {
+  border: none;
+  color: $dept-blue;
+  width: auto;
+}
+#tableControl {
+  float: right;
+}
+#tableControl button.btn.btn-secondary {
+  background-color: white;
+  color: lightgrey;
+  border: none;
+}
+#tableControl button.btn.btn-secondary:hover {
+  color: $dept-blue;
 }

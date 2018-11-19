@@ -9,6 +9,8 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="/css/labelauty.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/styles.css">
 <title>Deal or No Deal</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,6 +50,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/deal">DEAL OR NO DEAL</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/recipe">ALCHEMY</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -58,7 +63,7 @@
       <div class="col">
         <div class="header-container">
           <div class="header-title">
-            <h1>UX RECIPE</h1>
+            <h1>UX ALCHEMY</h1>
           </div>
         </div>
       </div>
@@ -71,28 +76,62 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8">
-        <h2>I. Select Planning Activities</h2>
-        <div class="row">
-          
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-          <div class="col-12 col-md-3">
-            <button class="activity btn btn-light">Expert Review</button>
-          </div>
-        </div>
+        <h2>I. Select Planning Ingredients</h2>
+<div class="row">
+  
+    
+  
+    
+      
+      <input class="activityCheckbox" type="checkbox" data-estimate="4" data-rate="800"
+      data-name="Expert Review" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Expert Review </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Expert Review </span>"/>
+      
+    
+  
+</div>
+<h2>II. Select Research Ingredients</h2>
+<div class="row">
+  
+    
+      
+      <input class="activityCheckbox" id="buttonethnographic-research" type="checkbox" data-estimate="2" data-rate="800"
+      data-name="Ethnographic Research" data-labelauty="Ethnographic Research"/>
+      
+    
+  
+    
+  
+</div>
+
       </div>
       <div class="col-12 col-md-4">
-        <!-- Summary -->
+        <table class="table" id="summary-table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Task</th>
+      <th scope="col">Time</th>
+      <th scope="col">Rate</th>
+      <th scope="col" id="#totalTotal">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td id="timeSum"></td>
+      <td></td>
+      <td id="costSum"></td>
+    </tr>
+  </tfoot>
+</table>
+<div class="btn-group" role="group" id="tableControl">
+  <button type="button" class="btn btn-secondary"><i class="fas fa-cloud-download-alt"></i></button>
+  <button type="button" class="btn btn-secondary"><i class="fas fa-sync"></i></button>
+  <button type="button" class="btn btn-secondary"><i class="fas fa-calculator"></i></button>
+</div>
+
       </div>
     </div>
   </div>
@@ -110,6 +149,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+    <script src="/scripts/jquery-labelauty.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script src="/scripts/scroll.js"></script>
     <script src="/scripts/scripts.js"></script>
