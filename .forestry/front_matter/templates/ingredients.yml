@@ -40,3 +40,4 @@ fields:
   description: Insert the icon HTML from https://material.io/tools/icons/ <i class="material-icons">donut_large</i>
 pages:
 - _posts/2018-11-16-ethnographic-research.md
+- _posts/analytics-review.md
