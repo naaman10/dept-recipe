@@ -83,7 +83,7 @@
   
     
       
-      <input class="activityCheckbox" type="checkbox" data-estimate="4" data-rate="800"
+      <input class="activityCheckbox" type="checkbox" data-estimate="4" value="800"
       data-name="Expert Review" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Expert Review </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Expert Review </span>"/>
       
     
@@ -94,8 +94,8 @@
   
     
       
-      <input class="activityCheckbox" id="buttonethnographic-research" type="checkbox" data-estimate="2" data-rate="800"
-      data-name="Ethnographic Research" data-labelauty="Ethnographic Research"/>
+      <input class="activityCheckbox" type="checkbox" data-estimate="2" value="800"
+      data-name="Ethnographic Research" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Ethnographic Research </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Ethnographic Research </span>"/>
       
     
   
@@ -127,9 +127,16 @@
   </tfoot>
 </table>
 <div class="btn-group" role="group" id="tableControl">
-  <button type="button" class="btn btn-secondary"><i class="fas fa-cloud-download-alt"></i></button>
-  <button type="button" class="btn btn-secondary"><i class="fas fa-sync"></i></button>
-  <button type="button" class="btn btn-secondary"><i class="fas fa-calculator"></i></button>
+  <button onclick="javascript:window.print()" type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
+  <button type="button" class="btn btn-secondary toggle-visible" id="tableReset"><i class="fas fa-sync"></i></button>
+  <button href="#conclusion" type="button" class="btn btn-secondary calculate-me toggle-visible"><i class="fas fa-calculator"></i></button>
+</div>
+
+<div class="row">
+    <div class="col-md-12" id="conclusion">
+          <h3>TOTAL DAYS <span class="hours"></span></h3> and
+          <h3>TOTAL COST <span class="cost"></span></h3>
+    </div>
 </div>
 
       </div>

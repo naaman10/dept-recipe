@@ -130,5 +130,22 @@ td input {
   color: lightgrey;
   border: none; }
 
+span.hours, span.cost {
+  color: #1A18F7;
+  font-size: 35px; }
+
 #tableControl button.btn.btn-secondary:hover {
   color: #1A18F7; }
+
+#conclusion {
+  display: none; }
+
+.btn.btn-primary {
+  color: white;
+  background-color: #1A18F7;
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+  font-family: FF Good Pro Cond;
+  font-weight: 600;
+  font-style: normal; }

@@ -144,6 +144,23 @@ td input {
   color: lightgrey;
   border: none;
 }
+span.hours,span.cost {
+  color: $dept-blue;
+  font-size: 35px;
+}
 #tableControl button.btn.btn-secondary:hover {
   color: $dept-blue;
+}
+#conclusion {
+  display: none;
+}
+.btn.btn-primary {
+  color: white;
+  background-color: $dept-blue;
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+  font-family: FF Good Pro Cond;
+  font-weight: 600;
+  font-style: normal;
 }
