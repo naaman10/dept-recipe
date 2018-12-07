@@ -33,3 +33,83 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="newRaidModal" tabindex="-1" role="dialog" aria-labelledby="newRaidModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>NEW RAID ITEM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="raidMessage">Description</label>
+            <textarea placeholder="Your message" class="form-control" id="raidMessage" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+             <label for="raidSeveritiy">Severity</label>
+             <select class="form-control selectIcon" id="raidSeveritiy">
+               <option>Red</option>
+               <option>Amber</option>
+               <option>Green</option>
+             </select>
+           </div>
+          <div class="form-group">
+            <label for="riskMitigation">Mitigation</label>
+            <input type="text" class="form-control" id="riskMitigation" placeholder="How can this be mitigated">
+          </div>
+          <div class="form-group">
+            <label for="riskOwner">Owner</label>
+            <input type="text" class="form-control" id="riskOwner" placeholder="Add risk owner">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="addRaidItem">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="updateRiskModal" tabindex="-1" role="dialog" aria-labelledby="updateRiskModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>VIEW RAID ITEM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="raidMessageView">Description</label>
+            <textarea placeholder="Your message" class="form-control" id="raidMessageView" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+             <label for="raidSeveritiyView">Severity</label>
+             <select class="form-control selectIcon" id="raidSeveritiyView">
+               <option>Red</option>
+               <option>Amber</option>
+               <option>Green</option>
+             </select>
+           </div>
+          <div class="form-group">
+            <label for="riskMitigationView">Mitigation</label>
+            <input type="text" class="form-control" id="riskMitigationView" placeholder="How can this be mitigated">
+          </div>
+          <div class="form-group">
+            <label for="riskOwnerView">Owner</label>
+            <input type="text" class="form-control" id="riskOwnerView" placeholder="Add risk owner">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeRaidItem">CLOSE RISK</button>
+        <button type="submit" class="btn btn-primary" id="addRaidItem">ADD</button>
+      </div>
+    </div>
+  </div>
+</div>

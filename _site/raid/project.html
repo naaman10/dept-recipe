@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Deal or No Deal">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="/css/labelauty.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<title>Deal or No Deal</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59172127-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-59172127-3');
+</script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.deptagency.com/wp-content/themes/dept-agency-global/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.deptagency.com/wp-content/themes/dept-agency-global/assets/img/favicons/favicon-16x16.png">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="/css/toastr.css">
+
+
+  </head>
+  <body>
+
+
+
+
+
+    <section id="header">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173 46" width="173" height="46"> <path d="M147.9 46h12.6V10.8H173V0h-37.6v10.8h12.5V46zm-41.5-24.9V9.9h7.2c4.6 0 6.9 1.9 6.9 5.6 0 3.7-2.3 5.6-6.9 5.6h-7.2zM93.9 46h12.6V31h7.5c11.3 0 18.8-4.9 18.8-15.5S125.2 0 114 0H93.9v46zm-43.3 0h34.3V35.7H63.2v-7.8h21.5V18H63.2v-7.7h21.7V0H50.6v46zm-38-10.7V10.7h4c8.8 0 14.3 3.2 14.3 12.3 0 9.1-5.4 12.3-14.3 12.3h-4zM0 46h16.5c15.6 0 26.9-6.2 26.9-23C43.3 6.2 32 0 16.5 0H0v46z"></path></svg></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/raid">RAID</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/deal">DEAL OR NO DEAL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/recipe">ALCHEMY</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header-container">
+          <div class="header-title">
+            <h1>RAID</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#risks" role="tab" aria-controls="home" aria-selected="true">RISKS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#assumptions" role="tab" aria-controls="profile" aria-selected="false">ASSUMPTIONS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#issues" role="tab" aria-controls="contact" aria-selected="false">ISSUES</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#dependancies" role="tab" aria-controls="contact" aria-selected="false">DEPENDANCIES</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="risks" role="tabpanel" aria-labelledby="home-tab"><div class="table-responsive">
+  <table id="riskTable" class="table">
+    <thead>
+      <tr>
+        <th scope="col">Description</th>
+        <th scope="col">Severity</th>
+        <th scope="col">Mitigation</th>
+        <th scope="col">Owner</th>
+        <th scope="col">Date closed</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+</div>
+</div>
+  <div class="tab-pane fade" id="assumptions" role="tabpanel" aria-labelledby="profile-tab">assumptions</div>
+  <div class="tab-pane fade" id="issues" role="tabpanel" aria-labelledby="contact-tab">issues</div>
+  <div class="tab-pane fade" id="dependancies" role="tabpanel" aria-labelledby="contact-tab">dependancies</div>
+</div>
+<div class="fab-bottom">
+  <button class="fab-button" data-toggle="modal" data-target="#newRaidModal"><i class="fas fa-plus"></i></button>
+</div>
+<div class="modal fade" id="suberBreakModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Product Manager</h5>
+        <h6 class="text-muted">Super Break January 2018</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Product Manager of Super Break website and new greenfield project</li>
+          <li>Maintain, develop and deliver the product roadmap</li>
+          <li>Manage and implement change portfolio across the website from projects to BAU</li>
+          <li>Manage and prioritise issue backlog based on customer and business needs</li>
+          <li>Liaise with senior leadership and management on various IT projects to establish
+              needs and priorities</li>
+          <li>Detail product requirements and aid the Business Analysis team when defining
+              detailed requirements</li>
+          <li>Coordinate project teams from discovery to implementation</li>
+          <li>Manage A/B Tests, User Research and customer feedback and act on any learnings</li>
+          <li>Coordinate research and analysis on projects</li>
+          <li>Lead workshops/working groups</li>
+          <li>Manage resource against product priorities</li>
+          <li>Manage product development and change throughout the SDLC</li>
+          <li>Establish and grow</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="newRaidModal" tabindex="-1" role="dialog" aria-labelledby="newRaidModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>NEW RAID ITEM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="raidMessage">Description</label>
+            <textarea placeholder="Your message" class="form-control" id="raidMessage" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+             <label for="raidSeveritiy">Severity</label>
+             <select class="form-control selectIcon" id="raidSeveritiy">
+               <option>Red</option>
+               <option>Amber</option>
+               <option>Green</option>
+             </select>
+           </div>
+          <div class="form-group">
+            <label for="riskMitigation">Mitigation</label>
+            <input type="text" class="form-control" id="riskMitigation" placeholder="How can this be mitigated">
+          </div>
+          <div class="form-group">
+            <label for="riskOwner">Owner</label>
+            <input type="text" class="form-control" id="riskOwner" placeholder="Add risk owner">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="addRaidItem">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="updateRiskModal" tabindex="-1" role="dialog" aria-labelledby="updateRiskModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>VIEW RAID ITEM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="raidMessageView">Description</label>
+            <textarea placeholder="Your message" class="form-control" id="raidMessageView" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+             <label for="raidSeveritiyView">Severity</label>
+             <select class="form-control selectIcon" id="raidSeveritiyView">
+               <option>Red</option>
+               <option>Amber</option>
+               <option>Green</option>
+             </select>
+           </div>
+          <div class="form-group">
+            <label for="riskMitigationView">Mitigation</label>
+            <input type="text" class="form-control" id="riskMitigationView" placeholder="How can this be mitigated">
+          </div>
+          <div class="form-group">
+            <label for="riskOwnerView">Owner</label>
+            <input type="text" class="form-control" id="riskOwnerView" placeholder="Add risk owner">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeRaidItem">CLOSE RISK</button>
+        <button type="submit" class="btn btn-primary" id="addRaidItem">ADD</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDkspge0QHbZXnU6wLa0G6SyJABex8ww8w",
+        authDomain: "dept-raid.firebaseapp.com",
+        databaseURL: "https://dept-raid.firebaseio.com",
+        projectId: "dept-raid",
+        storageBucket: "dept-raid.appspot.com",
+        messagingSenderId: "252856474954"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+    <script src="/scripts/jquery-labelauty.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src="/scripts/scroll.js"></script>
+    <script src="/scripts/raid.js"></script>
+    <script src="/scripts/toastr.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+</html>

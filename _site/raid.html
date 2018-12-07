@@ -64,7 +64,7 @@
       <div class="col">
         <div class="header-container">
           <div class="header-title">
-            <h1>Home</h1>
+            <h1>RAID</h1>
           </div>
         </div>
       </div>
@@ -74,48 +74,83 @@
 
 </section>
 
-<section id="tools">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">RAID LOG</h3>
-              <p class="card-text">Create a RAID Log for a project to capture key risks, assumptions, issues and dependancies.</p>
-              <button class="btn btn-primary disabled" data-toggle="tooltip" data-placement="top" title="Feature coming soon">GO TO RAID</button>
-            </div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <h2>PROJECTS<button id="addProjectRaid" class="btn btn-sm btn-light" data-toggle="modal" data-target="#newRaidProjectModal">add new</button></h2>
+      <ul class="list-group list-group-flush" id="listProjects">
 
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">UX ALCHEMY</h3>
-              <p class="card-text">Build a project recipe adding only the ingredients you need, see the project time and cost.</p>
-              <a href="/recipe" class="btn btn-primary">GO TO ALCHEMY</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      </ul>
+    </div>
+    <div class="col-12 col-md-9">
+      <h2>RISKS</h2>
+      <p> Events that will have an adverse impact on your project if they occur. Risk refers to the combined likelihood the event will occur and the impact on the project if it does occur. If the likelihood of the event happening and impact to the
+        project are both high, you identify the event as a risk. The log includes descriptions of each risk, full analysis and a plan to mitigate them.</p>
+      <h2>ASSUMPTIONS</h2>
+      <p>Any factors that you are assuming to be in place that will contribute to the successful result of your project. The log includes details of the assumption, the reason it is assumed, and the action needed to confirm whether the assumption is
+        valid.</p>
+      <h2>ISSUES</h2>
+      <p>Something that is going wrong on your project and needs managing. Failure to manage issues may result in a poor delivery or even complete failure. The log includes descriptions of each issue, its impact, its seriousness and actions needed
+        to contain and remove it.</p>
+      <h2>DEPENDANCIES</h2>
+      <p>Any event or work that are either dependent on the result of your project, or on which your project will be dependent. The log captures whom you are dependent on, what they should deliver and when. It may also include who is dependent on
+        you.</p>
     </div>
   </div>
-</section>
+</div>
+<div class="modal fade" id="newRaidProjectModal" tabindex="-1" role="dialog" aria-labelledby="newRaidProjectModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>NEW RAID PROJECT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="newRaidProjectForm">
+          <div class="form-group">
+            <label for="projectName">Project Name</label>
+            <input placeholder="Name" class="form-control" id="projectName" ></input>
+          </div>
+          <div class="form-group">
+            <label for="raidMessage">Description</label>
+            <textarea placeholder="Project description" class="form-control" id="projectDescription" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="submit" name="submit" onclick="createProject()">CREATE</button>
+    </div>
+  </div>
+</div>
 
 
 
 
 
 
-
-
-
-
-
-
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDkspge0QHbZXnU6wLa0G6SyJABex8ww8w",
+        authDomain: "dept-raid.firebaseapp.com",
+        databaseURL: "https://dept-raid.firebaseio.com",
+        projectId: "dept-raid",
+        storageBucket: "dept-raid.appspot.com",
+        messagingSenderId: "252856474954"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
     <script src="/scripts/jquery-labelauty.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script src="/scripts/scroll.js"></script>
-    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/raid.js"></script>
+    <script src="/scripts/toastr.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     </body>
