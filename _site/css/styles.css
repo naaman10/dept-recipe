@@ -125,6 +125,15 @@ td input {
   color: #1A18F7;
   width: auto; }
 
+td input.form-control {
+  padding-left: 0;
+  padding-right: 0; }
+
+td input:disabled, .form-control:disabled {
+  font-weight: bold;
+  background-color: white;
+  border-bottom: #f3f6f6; }
+
 #tableControl {
   float: right; }
 

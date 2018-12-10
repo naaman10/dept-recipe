@@ -56,6 +56,7 @@ $('input').change(function () {
 });
 
 function createRow(text, count) {
+  console.log(text + " and " + count)
     var data = '<tr id="result' + count + '" class="result">' +
             '<td> <h6>' + text + '</h6> ' +
             '</td> <td> ' +
