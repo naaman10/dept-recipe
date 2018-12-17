@@ -14,3 +14,20 @@ description: Deal or No Deal
 baseurl: ''
 url: http://mscc.naamanhudson.com/
 markdown: kramdown
+fields:
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Planning
+    - Research
+    - Exploration
+    - Information Architecture
+    - Design
+    - Prototyping
+    - Testing
+  label: Category
+  name: categories
+  default: Planning
