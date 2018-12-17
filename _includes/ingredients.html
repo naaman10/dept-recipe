@@ -1,22 +1,16 @@
-<h2>I. Select Planning Ingredients</h2>
-<div class="row">
-  {% for post in site.posts %}
-    {% if post.activityCategory == "Planning" %}
-      {% if post.active_ == true %}
-      <input class="activityCheckbox" type="checkbox" data-estimate="{{post.time_estimate}}" value="800"
-      data-name="{{post.ingredient_name}}" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> {{post.ingredient_name}} </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> {{post.ingredient_name}} </span>"/>
-      {% endif %}
-    {% endif %}
+<ol>
+  {% for category in site.categories %}
+  <h2>
+    <li> {{ category[0] }}</li>
+  </h2>
+  <ul class="ingredientList">
+  {% for post in category[1] %}
+  {% if post.active_ == true %}
+  <li>
+  <input class="activityCheckbox" type="checkbox" data-estimate="{{post.time_estimate}}" value="800" data-name="{{post.ingredient_name}}" data-labelauty="<span class='labelautyLabel'> {{post.ingredient_name}} </span>|<span class='labelautyLabel'> {{post.ingredient_name}} </span>" />
+  </li>
+  {% endif %}
   {% endfor %}
-</div>
-<h2>II. Select Research Ingredients</h2>
-<div class="row">
-  {% for post in site.posts %}
-    {% if post.activityCategory == "Research" %}
-      {% if post.active_ == true %}
-      <input class="activityCheckbox" type="checkbox" data-estimate="{{post.time_estimate}}" value="800"
-      data-name="{{post.ingredient_name}}" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> {{post.ingredient_name}} </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> {{post.ingredient_name}} </span>"/>
-      {% endif %}
-    {% endif %}
+  </ul>
   {% endfor %}
-</div>
+</ol>

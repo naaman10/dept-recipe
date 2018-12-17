@@ -10,6 +10,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="/css/bootstrap-toggle.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="/css/labelauty.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/styles.css">
@@ -78,41 +79,41 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8">
-        <h2>I. Select Planning Ingredients</h2>
-<div class="row">
+        <ol>
   
-    
+  <h2>
+    <li> Planning</li>
+  </h2>
+  <ul class="ingredientList">
   
-    
   
-    
-      
-      <input class="activityCheckbox" type="checkbox" data-estimate="4" value="800"
-      data-name="Expert Review" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Expert Review </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Expert Review </span>"/>
-      
-    
+  <li>
+  <input class="activityCheckbox" type="checkbox" data-estimate="4" value="800" data-name="Expert Review" data-labelauty="<span class='labelautyLabel'> Expert Review </span>|<span class='labelautyLabel'> Expert Review </span>" />
+  </li>
   
-</div>
-<h2>II. Select Research Ingredients</h2>
-<div class="row">
   
-    
-      
-      <input class="activityCheckbox" type="checkbox" data-estimate="2" value="800"
-      data-name="Analytics Review" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Analytics Review </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Analytics Review </span>"/>
-      
-    
+  </ul>
   
-    
-      
-      <input class="activityCheckbox" type="checkbox" data-estimate="2" value="800"
-      data-name="Ethnographic Research" data-labelauty="<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Ethnographic Research </span>|<i class='fa fa-area-chart'></i><span class='labelautyLabel'> Ethnographic Research </span>"/>
-      
-    
+  <h2>
+    <li> Research</li>
+  </h2>
+  <ul class="ingredientList">
   
-    
   
-</div>
+  <li>
+  <input class="activityCheckbox" type="checkbox" data-estimate="2" value="800" data-name="Analytics Review" data-labelauty="<span class='labelautyLabel'> Analytics Review </span>|<span class='labelautyLabel'> Analytics Review </span>" />
+  </li>
+  
+  
+  
+  <li>
+  <input class="activityCheckbox" type="checkbox" data-estimate="2" value="800" data-name="Ethnographic Research" data-labelauty="<span class='labelautyLabel'> Ethnographic Research </span>|<span class='labelautyLabel'> Ethnographic Research </span>" />
+  </li>
+  
+  
+  </ul>
+  
+</ol>
 
       </div>
       <div class="col-12 col-md-4">
@@ -168,6 +169,7 @@
 
     <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
     <script src="/scripts/jquery-labelauty.js"></script>
+    <script src="/scripts/bootstrap-toggle.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script src="/scripts/scroll.js"></script>
     <script src="/scripts/scripts.js"></script>

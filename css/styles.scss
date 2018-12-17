@@ -263,3 +263,27 @@ input.form-control:focus,select.form-control:focus,textarea.form-control:focus {
   background-color: #F3F5F6;
   cursor: pointer;
 }
+input.labelauty + label {
+  display: inline-block;
+}
+.toggle.btn.btn-default.off {
+  width: 100px;
+}
+.btn.btn-primary.toggle-on {
+  background-color: #F3F5F6;
+  color: black;
+}
+.btn.btn-default.active.toggle-off {
+  background-color: $dept-blue;
+  color: white;
+}
+span.toggle-handle.btn.btn-default {
+  background-color: black;
+}
+ul.ingredientList {
+  list-style: none;
+  padding-left: 0;
+}
+ul.ingredientList li {
+  display: inline;
+}
