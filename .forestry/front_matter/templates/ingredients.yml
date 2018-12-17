@@ -17,7 +17,7 @@ fields:
     - Prototyping
     - Testing
   label: Category
-  name: activityCategory
+  name: categories
   default: Planning
 - type: boolean
   name: active_
