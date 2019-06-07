@@ -263,9 +263,13 @@ input.labelauty + label {
 span.toggle-handle.btn.btn-default {
   background-color: black; }
 
+ol {
+  text-transform: uppercase; }
+
 ul.ingredientList {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  text-transform: none; }
 
 ul.ingredientList li {
   display: inline; }
