@@ -6,7 +6,7 @@ active_: true
 ingredient_name: Ethnographic Research
 time_estimate: 2
 icon: <i class="material-icons"> public </i>
-categories: Planning
+categories: Research
 
 ---
 # Ethnographic Research
