@@ -11,10 +11,10 @@ fields:
     - Planning
     - Research
     - Exploration
-    - Information Architecture
     - Design
     - Prototyping
     - Testing
+    - Information-Architecture
   label: Category
   name: categories
   default: Planning
