@@ -269,3 +269,14 @@ ul.ingredientList {
 
 ul.ingredientList li {
   display: inline; }
+
+.info-button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer; }
+
+.modal-header {
+  border-bottom: 0; }
+
+.modal-footer {
+  border-top: 0; }
