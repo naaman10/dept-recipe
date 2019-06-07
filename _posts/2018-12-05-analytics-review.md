@@ -6,7 +6,7 @@ active_: true
 ingredient_name: Analytics Review
 time_estimate: 2
 icon: ''
-categories: Planning
+categories: Research
 
 ---
 # Analytics Review
