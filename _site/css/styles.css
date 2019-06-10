@@ -284,3 +284,6 @@ ul.ingredientList li {
 
 .modal-footer {
   border-top: 0; }
+
+.infoModal img {
+  width: 100%; }
