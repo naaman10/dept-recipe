@@ -12,3 +12,5 @@ categories: Research
 # Analytics Review
 
 A deep dive in to your Google Analytics.
+
+![](https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/resource_hero_pictures/targets/27168/google_full/analytics-hero-image.png)
