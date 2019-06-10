@@ -12,3 +12,6 @@ categories: Planning
 # Expert Review
 
 Review a site or an app by verifying it through a series of feature checkpoints.
+
+* List example short 
+* List example long; lot's of text in the list item to demonstrate a longer list item
