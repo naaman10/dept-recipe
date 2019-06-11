@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 .header-title h1, .header-title .dropdown {
   display: inline;
-  font-size: 150px;
+  font-size: 90px;
   font-weight: 800;
 }
 .navbar {
@@ -304,4 +304,14 @@ ul.ingredientList li {
 }
 .infoModal img {
   width: 100%;
+}
+@media (min-width: 576px) {
+  .header-title h1 {
+    font-size: 90px;
+  }
+}
+@media (min-width: 992px) {
+  .header-title h1 {
+    font-size: 120px;
+  }
 }

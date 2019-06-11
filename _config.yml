@@ -10,7 +10,7 @@ collections:
     output: true
 defaults:
 email: naamanh10@gmail.com
-description: Deal or No Deal
+description: DEPT Tools
 baseurl: ''
 url: http://mscc.naamanhudson.com/
 markdown: kramdown
