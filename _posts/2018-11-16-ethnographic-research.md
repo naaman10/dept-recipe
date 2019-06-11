@@ -12,3 +12,7 @@ categories: Research
 # Ethnographic Research
 
 You can tell a lot about a person based on his/her culture and social or group behavior. For example did you know that in Japan, purple is the color of wealth?
+
+    <div class"codeblock">Example Code Block</div>
+    
+    
