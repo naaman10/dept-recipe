@@ -39,6 +39,6 @@ fields:
   description: Insert the icon HTML from https://material.io/tools/icons/ <i class="material-icons">donut_large</i>
 pages:
 - _posts/2020-04-09-Competitor Analysis.md
+- _posts/2020-04-09-Heuristic Evaluation.md
 - _posts/2020-04-09-Sitemap Audit.md
-- _posts/Heuristic Evaluation.md
 - _posts/Page Template & Component Audit.md
