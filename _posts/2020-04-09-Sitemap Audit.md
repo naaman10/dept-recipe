@@ -1,5 +1,5 @@
 ---
-categories: Research
+categories: Information-Architecture
 active_: true
 ingredient_name: Sitemap Audit
 time_estimate: 1
