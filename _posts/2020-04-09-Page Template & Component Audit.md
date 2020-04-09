@@ -1,7 +1,7 @@
 ---
 categories: Research
 active_: true
-ingredient_name: Page Template & Component Audit
+ingredient_name: Page & Component Audit
 time_estimate: 2
 icon: ''
 
