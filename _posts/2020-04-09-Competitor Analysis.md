@@ -8,4 +8,4 @@ icon: ''
 ---
 # **Competitor Analysis**
 
-Reviewing sites within the clients competitive space reviewing the current content and features.
+Reviewing competitor sites within the clients current space and assessing competitors content and features.
