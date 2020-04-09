@@ -6,6 +6,6 @@ time_estimate: 4
 icon: ''
 
 ---
-**Competitor Analysis**
+# **Competitor Analysis**
 
-Reviewing sites within the clients competitive space reviewing the current content and features. 
+Reviewing sites within the clients competitive space reviewing the current content and features.
