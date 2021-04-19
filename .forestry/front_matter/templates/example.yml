@@ -1,7 +1,23 @@
 ---
 label: Example
 hide_body: false
+display_field: name
 fields:
+- name: type
+  type: select
+  default: example
+  config:
+    required: true
+    options:
+    - ingredient
+    - example
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  hidden: true
 - name: name
   type: text
   config:
@@ -52,18 +68,3 @@ fields:
   config:
     maxSize: 64
   label: Image
-- name: type
-  type: select
-  default: example
-  config:
-    required: true
-    options:
-    - ingredient
-    - example
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Type
-  hidden: true
