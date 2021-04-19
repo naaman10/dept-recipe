@@ -1,4 +1,54 @@
 ---
 label: Example
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - E-Commerce
+    - Brochure
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: sub-category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Navigation
+    - Product Listing Page
+    - Product Details Page
+    - Account
+    - Checkout
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Sub-Category
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
