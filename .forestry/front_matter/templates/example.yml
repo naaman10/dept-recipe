@@ -52,3 +52,18 @@ fields:
   config:
     maxSize: 64
   label: Image
+- name: type
+  type: select
+  default: example
+  config:
+    required: true
+    options:
+    - ingredient
+    - example
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  hidden: true

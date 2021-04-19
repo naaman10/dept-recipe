@@ -2,6 +2,21 @@
 label: Ingredients
 hide_body: false
 fields:
+- name: type
+  type: select
+  default: ingredient
+  config:
+    required: true
+    options:
+    - ingredient
+    - example
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  hidden: true
 - type: select
   config:
     source:
