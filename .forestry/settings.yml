@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: "/dept-recipe/recipe/admin"
 webhook_url: 
 sections:
+- type: jekyll-posts
+  label: Examples
+  create: documents
+  match: "**/*"
+  new_doc_ext: ''
+  templates:
+  - example
 - type: directory
   path: _posts
   label: Ingredients
