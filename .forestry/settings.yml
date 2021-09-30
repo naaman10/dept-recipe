@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: "/dept-recipe/recipe/admin"
 webhook_url: 
 sections:
-- type: jekyll-posts
-  label: Examples
-  create: documents
-  new_doc_ext: app
-  templates:
-  - example
 - type: directory
   path: _posts
   label: Ingredients
