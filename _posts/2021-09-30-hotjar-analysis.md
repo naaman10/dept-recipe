@@ -1,6 +1,6 @@
 ---
 type: ingredient
-categories: Planning
+categories: Research
 active_: true
 ingredient_name: Hotjar Analysis
 time_estimate: 2
