@@ -7,4 +7,6 @@ time_estimate: 2
 icon: ''
 
 ---
- Setting up heatmaps, recordings, polls, forms etc and reviewing findings to draw conclusions
+## HotJar Analysis
+
+Setting up heatmaps, recordings, polls, forms etc and reviewing findings to draw conclusions
