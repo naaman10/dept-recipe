@@ -45,7 +45,8 @@ $('input').change(function () {
     if ($(this).prop('checked')) {
         var iCountRes = $('.result').length;
         $(this).attr('data-id', 'result' + iCountRes);
-        $("#summary-table").append(createRow($(this).parent().find('.labelauty-checked .labelautyLabel').text(), iCountRes));
+        var estimate = $(this).parent().find('.labelauty-checked .labelautyLabel').attr('data-estimate');
+        $("#summary-table").append(createRow($(this).parent().find('.labelauty-checked .labelautyLabel').text(), iCountRes, estimate));
         //START ONBLUR
         $('input').blur(function () {
             $('input[name=c' + iCountRes + ']').val(+($('input[name=p' + iCountRes + ']').val()) * (+$('input[name=d' + iCountRes + ']').val()));
@@ -58,15 +59,16 @@ $('input').change(function () {
 });
 
 
-function createRow(text, count) {
+function createRow(text, count, estimate) {
+    var newEst = estimate * 800;
     var data = '<tr id="result' + count + '" class="result">' +
             '<td> <h6>' + text + '</h6> ' +
             '</td> <td> ' +
-            '<input id="p' + count + '" name="p' + count + '" type="number"  value="1" min="1" class="form-control"> ' +
+            '<input id="p' + count + '" name="p' + count + '" type="number"  value="' + estimate +'" min="1" class="form-control"> ' +
             '</td> <td> ' +
             '<input  id="d' + count + '" name="d' + count + '" type="number" min="650" max="1000" value="800" step="25" class="form-control"> ' +
             '</td> <td> ' +
-            '<input  id="c' + count + '" name="c' + count + '" type="number" disabled value="800" class="form-control"> ' +
+            '<input  id="c' + count + '" name="c' + count + '" type="number" disabled value="'+ newEst +'" class="form-control"> ' +
             '</td> </tr>';
     return data;
 }
@@ -96,7 +98,8 @@ $('.calculate-me').on('click', function(event) {
 
 // Clear all input fields
 $('#tableReset').on('click', function() {
-  $('#summary-table').children('tr').remove();
+  $('input:checkbox').removeAttr('checked')
+  $('#summary-table').children().find('.result').remove();
 });
 
 

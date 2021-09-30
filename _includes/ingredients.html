@@ -7,7 +7,7 @@
   {% for post in category[1] %}
   {% if post.active_ == true %}
   <li>
-  <input class="activityCheckbox" type="checkbox" data-estimate="{{post.time_estimate}}" value="800" data-name="{{post.ingredient_name}}" data-labelauty="<span class='labelautyLabel'> {{post.ingredient_name}} <button class='info-button' data-toggle='modal' data-target='#{{post.ingredient_name | replace: ' ','-'}}'><i class='fas fa-info-circle'></i></button></span>|<span class='labelautyLabel'> {{post.ingredient_name}} <button class='info-button' data-toggle='modal' data-target='#{{post.ingredient_name | replace: ' ','-'}}'><i class='fas fa-info-circle'></i></button></span>" />
+  <input class="activityCheckbox" type="checkbox" data-estimate="{{post.time_estimate}}" value="800" data-name="{{post.ingredient_name}}" data-labelauty="<span class='labelautyLabel'> {{post.ingredient_name}} <button class='info-button' data-toggle='modal' data-target='#{{post.ingredient_name | replace: ' ','-'}}'><i class='fas fa-info-circle'></i></button></span>|<span class='labelautyLabel' data-estimate='{{ post.time_estimate }}'> {{post.ingredient_name}} <button class='info-button' data-toggle='modal' data-target='#{{post.ingredient_name | replace: ' ','-'}}'><i class='fas fa-info-circle'></i></button></span>" />
   </li>
 
   <div class="modal fade" id="{{post.ingredient_name | replace: ' ','-'}}" tabindex="-1" role="dialog" aria-labelledby="{{post.ingredient_name | replace: ' ','-'}}" aria-hidden="true">
@@ -21,7 +21,10 @@
       <div class="modal-body">
         <div class="container">
           <div class="row">
-            <div class="col infoModal">{{ post.content | markdownify }}</div>
+            <div class="col infoModal">
+              {{ post.content | markdownify }}
+              <p class="small mt-4">Typical Estimate: {{ post.time_estimate }}</p>
+            </div>
           </div>
         </div>
       </div>
