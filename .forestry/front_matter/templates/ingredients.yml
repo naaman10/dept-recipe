@@ -30,6 +30,9 @@ fields:
     - Prototyping
     - Testing
     - Information-Architecture
+    - Optimisation
+    - Definition
+    - Workshops
   label: Category
   name: categories
   default: Planning
