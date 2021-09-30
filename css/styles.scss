@@ -1,40 +1,37 @@
 ---
 ---
 // scss
-$dept-blue: #1A18F7;
+$dept-blue: #5115f7;
 $dept-green: #95C5AC;
+$dept-black: #121212;
+$dept-grey: #f2f2f2;
 $rag-green: #C3E5CB;
 $rag-amber: #FFEEBA;
 $rag-red: #F5C6CA;
 
 // styles
 @font-face {
-  font-family: FF Good Pro Cond;
-  font-display: fallback;
-  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/94898851-2b28-408d-a39d-8d35f6a5cd34.woff2") format("woff2"),url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/05bb53e7-b890-48d1-a526-cc16ccacd781.woff") format("woff");
-  font-weight: 600;
-}
-@font-face {
   font-family: Maison Neue;
-  font-display: fallback;
-  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Book.woff") format("woff");
+  font-display: swap;
+  src: url("https://www.deptagency.com/wp-content/themes/dept/public/MaisonNeueMG-Light.woff2") format("woff");
   font-weight: 300
 }
 
 @font-face {
   font-family: Maison Neue;
-  font-display: fallback;
-  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Medium.woff") format("woff");
-  font-weight: 500
+  font-display: swap;
+  src: url("https://www.deptagency.com/wp-content/themes/dept/public/MaisonNeueMG-Book.woff2") format("woff");
+  font-weight: 400
+}
+.bg-dark {
+  background-color: $dept-black;
+  color: #ffffff;
 }
 
-@font-face {
-  font-family: Maison Neue;
-  font-display: fallback;
-  src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Bold.woff") format("woff");
-  font-weight: 600
+#tools .col {
+  margin: 0;
+  padding: 0;
 }
-
 body, html {
   height: 100%;
 }
@@ -44,16 +41,16 @@ p {
   font-weight: 300;
 }
 h1, h2, h3, h4, h5 {
-  font-family: FF Good Pro Cond;
-  font-weight: 600;
+  font-family: "Maison Neue", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 #header {
-  margin: 20px;
-  background-color: #f3f6f6;
+  background-color: $dept-grey;
 }
 #page-header {
-  padding-top: 40px;
+  height: calc(50vh - 71px);
+  padding-top: 50px;
 }
 .table-responsive {
   padding-left: 20px;
@@ -74,7 +71,7 @@ h1, h2, h3, h4, h5 {
   padding-right: 20px;
   padding-left: 20px;
   max-width: 1240px;
-  border-bottom: 1px solid black;
+
 }
 .navbar-brand {
   color: #272727;
@@ -84,11 +81,10 @@ h1, h2, h3, h4, h5 {
   height: 23px;
 }
 a.nav-link {
-  font-family: FF Good Pro Cond;
+  font-family: "Maison Neue", sans-serif;
   font-size: 1.4rem;
   letter-spacing: .04em;
   color: #272727;
-  text-transform: uppercase;
 }
 .low {
   background-color: $dept-blue;
@@ -137,6 +133,20 @@ button.activity.btn.btn-light.active {
   background-color: $dept-green;
   border-color: $dept-green;
 }
+.btn-block {
+  position: absolute;
+  left: 0;
+  height: 80px;
+  padding-left: 30px!important;
+  line-height: 60px;
+  font-weight: 300;
+  text-align: left;
+  i {
+    float: right;
+    line-height: 60px;
+    padding-right: 30px;
+  }
+}
 td input {
   border: none;
   color: $dept-blue;
@@ -175,8 +185,8 @@ span.hours,span.cost {
   border-radius: 0;
   border: none;
   padding: 10px;
-  font-family: FF Good Pro Cond;
-  font-weight: 600;
+  font-family: "Maison Neue", sans-serif;
+  font-weight: 300;
   font-style: normal;
 }
 .btn.btn-secondary {
@@ -185,7 +195,7 @@ span.hours,span.cost {
   border-radius: 0;
   border: none;
   padding: 10px;
-  font-family: FF Good Pro Cond;
+  font-family: "Maison Neue", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -280,13 +290,9 @@ input.labelauty + label {
 span.toggle-handle.btn.btn-default {
   background-color: black;
 }
-ol {
-  text-transform: uppercase;
-}
 ul.ingredientList {
   list-style: none;
   padding-left: 0;
-  text-transform: none;
 }
 ul.ingredientList li {
   display: inline;
@@ -321,6 +327,16 @@ ul.ingredientList li {
 @media (min-width: 992px) {
   .header-title h1 {
     font-size: 120px;
+  }
+}
+.home-card {
+  min-height: 50vh;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  .btn {
+    position: absolute;
+    bottom: 35px;
   }
 }
 .card {

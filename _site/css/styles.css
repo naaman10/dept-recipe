@@ -1,20 +1,20 @@
-@font-face { font-family: FF Good Pro Cond; font-display: fallback; src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/94898851-2b28-408d-a39d-8d35f6a5cd34.woff2") format("woff2"), url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/05bb53e7-b890-48d1-a526-cc16ccacd781.woff") format("woff"); font-weight: 600; }
+@font-face { font-family: Maison Neue; font-display: swap; src: url("https://www.deptagency.com/wp-content/themes/dept/public/MaisonNeueMG-Light.woff2") format("woff"); font-weight: 300; }
 
-@font-face { font-family: Maison Neue; font-display: fallback; src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Book.woff") format("woff"); font-weight: 300; }
+@font-face { font-family: Maison Neue; font-display: swap; src: url("https://www.deptagency.com/wp-content/themes/dept/public/MaisonNeueMG-Book.woff2") format("woff"); font-weight: 400; }
 
-@font-face { font-family: Maison Neue; font-display: fallback; src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Medium.woff") format("woff"); font-weight: 500; }
+.bg-dark { background-color: #121212; color: #ffffff; }
 
-@font-face { font-family: Maison Neue; font-display: fallback; src: url("https://www.deptagency.com/wp-content/themes/dept-agency-global/build/assets/fonts/MaisonNeue-Bold.woff") format("woff"); font-weight: 600; }
+#tools .col { margin: 0; padding: 0; }
 
 body, html { height: 100%; }
 
 p { font-family: "Maison Neue", "Helvetica Neue", Arial, sans-serif; font-size: 18px; font-weight: 300; }
 
-h1, h2, h3, h4, h5 { font-family: FF Good Pro Cond; font-weight: 600; font-style: normal; }
+h1, h2, h3, h4, h5 { font-family: "Maison Neue", "Helvetica Neue", Arial, sans-serif; font-weight: 400; font-style: normal; }
 
-#header { margin: 20px; background-color: #f3f6f6; }
+#header { background-color: #f2f2f2; }
 
-#page-header { padding-top: 40px; }
+#page-header { height: calc(50vh - 71px); padding-top: 50px; }
 
 .table-responsive { padding-left: 20px; padding-right: 20px; }
 
@@ -22,15 +22,15 @@ h1, h2, h3, h4, h5 { font-family: FF Good Pro Cond; font-weight: 600; font-style
 
 .header-title h1, .header-title .dropdown { display: inline; font-size: 90px; font-weight: 800; }
 
-.navbar { margin-right: auto; margin-left: auto; height: 71px; padding-right: 20px; padding-left: 20px; max-width: 1240px; border-bottom: 1px solid black; }
+.navbar { margin-right: auto; margin-left: auto; height: 71px; padding-right: 20px; padding-left: 20px; max-width: 1240px; }
 
 .navbar-brand { color: #272727; }
 
 .navbar-brand svg { width: 87px; height: 23px; }
 
-a.nav-link { font-family: FF Good Pro Cond; font-size: 1.4rem; letter-spacing: .04em; color: #272727; text-transform: uppercase; }
+a.nav-link { font-family: "Maison Neue", sans-serif; font-size: 1.4rem; letter-spacing: .04em; color: #272727; }
 
-.low { background-color: #1A18F7; padding-top: 15px; padding-bottom: 15px; margin: 10px; color: white; }
+.low { background-color: #5115f7; padding-top: 15px; padding-bottom: 15px; margin: 10px; color: white; }
 
 .low:hover, .high:hover { opacity: .7; cursor: pointer; }
 
@@ -40,7 +40,7 @@ a.nav-link { font-family: FF Good Pro Cond; font-size: 1.4rem; letter-spacing: .
 
 .nav-tabs { border: none; }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { color: #1A18F7; border: none; }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { color: #5115f7; border: none; }
 
 #mainSection { margin: 20px; }
 
@@ -52,7 +52,11 @@ input.labelauty + label { margin-right: 25px; }
 
 button.activity.btn.btn-light.active { background-color: #95C5AC; border-color: #95C5AC; }
 
-td input { border: none; color: #1A18F7; width: auto; }
+.btn-block { position: absolute; left: 0; height: 80px; padding-left: 30px !important; line-height: 60px; font-weight: 300; text-align: left; }
+
+.btn-block i { float: right; line-height: 60px; padding-right: 30px; }
+
+td input { border: none; color: #5115f7; width: auto; }
 
 td input.form-control { padding-left: 0; padding-right: 0; }
 
@@ -62,29 +66,29 @@ td input:disabled, .form-control:disabled { font-weight: bold; background-color:
 
 #tableControl button.btn.btn-secondary { background-color: white; color: lightgrey; border: none; }
 
-span.hours, span.cost { color: #1A18F7; font-size: 35px; }
+span.hours, span.cost { color: #5115f7; font-size: 35px; }
 
-#tableControl button.btn.btn-secondary:hover { color: #1A18F7; }
+#tableControl button.btn.btn-secondary:hover { color: #5115f7; }
 
 #conclusion { display: none; }
 
-.btn.btn-primary { color: white; background-color: #1A18F7; border-radius: 0; border: none; padding: 10px; font-family: FF Good Pro Cond; font-weight: 600; font-style: normal; }
+.btn.btn-primary { color: white; background-color: #5115f7; border-radius: 0; border: none; padding: 10px; font-family: "Maison Neue", sans-serif; font-weight: 300; font-style: normal; }
 
-.btn.btn-secondary { color: white; background-color: #95C5AC; border-radius: 0; border: none; padding: 10px; font-family: FF Good Pro Cond; font-weight: 600; font-style: normal; }
+.btn.btn-secondary { color: white; background-color: #95C5AC; border-radius: 0; border: none; padding: 10px; font-family: "Maison Neue", sans-serif; font-weight: 600; font-style: normal; }
 
 .result td { width: 25%; }
 
 .nav-tabs { border: none; }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { color: #1A18F7; border: none; }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { color: #5115f7; border: none; }
 
 .fab-bottom { position: fixed; bottom: 20px; right: 20px; }
 
-.fab-button { background-color: #1A18F7; color: white; font-size: 20px; height: 60px; width: 60px; border: none; border-radius: 30px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
+.fab-button { background-color: #5115f7; color: white; font-size: 20px; height: 60px; width: 60px; border: none; border-radius: 30px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
 
 input.form-control, select.form-control, textarea.form-control { border: none; border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; border-bottom: 1px solid black; -webkit-appearance: none; }
 
-input.form-control:focus, select.form-control:focus, textarea.form-control:focus { outline: 0; box-shadow: none; border-bottom: 2px solid #1A18F7; }
+input.form-control:focus, select.form-control:focus, textarea.form-control:focus { outline: 0; box-shadow: none; border-bottom: 2px solid #5115f7; }
 
 .selectIcon:after { display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; -webkit-font-smoothing: antialiased; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007"; }
 
@@ -94,7 +98,7 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
 
 #projectArrow { float: right; display: none; }
 
-#projectButton:hover > #projectArrow { color: #1A18F7; display: inline-block; }
+#projectButton:hover > #projectArrow { color: #5115f7; display: inline-block; }
 
 .badge.Green { background-color: #C3E5CB !important; }
 
@@ -110,13 +114,11 @@ input.labelauty + label { display: inline-block; }
 
 .btn.btn-primary.toggle-on { background-color: #F3F5F6; color: black; }
 
-.btn.btn-default.active.toggle-off { background-color: #1A18F7; color: white; }
+.btn.btn-default.active.toggle-off { background-color: #5115f7; color: white; }
 
 span.toggle-handle.btn.btn-default { background-color: black; }
 
-ol { text-transform: uppercase; }
-
-ul.ingredientList { list-style: none; padding-left: 0; text-transform: none; }
+ul.ingredientList { list-style: none; padding-left: 0; }
 
 ul.ingredientList li { display: inline; }
 
@@ -133,6 +135,10 @@ ul.ingredientList li { display: inline; }
 @media (min-width: 576px) { .header-title h1 { font-size: 90px; } }
 
 @media (min-width: 992px) { .header-title h1 { font-size: 120px; } }
+
+.home-card { min-height: 50vh; padding-top: 15px; padding-left: 15px; padding-right: 15px; }
+
+.home-card .btn { position: absolute; bottom: 35px; }
 
 .card { border-radius: 0; border-color: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
