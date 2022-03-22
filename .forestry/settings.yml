@@ -7,7 +7,6 @@ sections:
 - type: document
   path: recipe.html
   label: Recipes
-  match: "**/*"
 - type: directory
   path: _posts
   label: Ingredients
