@@ -4,10 +4,52 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: permalink
-  label: permalink
+  label: Page URL
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: page
+- name: table_labels
+  type: field_group
+  config: {}
+  fields:
+  - name: column_1
+    type: text
+    config:
+      required: false
+    label: Column 1
+  - name: column_2
+    type: text
+    config:
+      required: false
+    label: Column 2
+  - name: column_3
+    type: text
+    config:
+      required: false
+    label: Column 3
+  - name: column_4
+    type: text
+    config:
+      required: false
+    label: Column 4
+  - name: print_tooltip
+    type: text
+    config:
+      required: false
+    label: Print Tooltip
+  - name: reset_tooltip
+    type: text
+    config:
+      required: false
+    label: Reset Tooltip
+  - name: calculate_tooltip
+    type: text
+    config:
+      required: false
+    label: Calculate Tooltip
+  label: Table Labels
