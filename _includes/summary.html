@@ -1,10 +1,10 @@
 <table class="table" id="summary-table">
   <thead class="bg-dark">
     <tr>
-      <th scope="col">Task</th>
-      <th scope="col">Time (days)</th>
-      <th scope="col">Rate</th>
-      <th scope="col" id="#totalTotal">Total</th>
+      <th scope="col">{{ page.table_labels.column_1 }}</th>
+      <th scope="col">{{ page.table_labels.column_2 }}</th>
+      <th scope="col">{{ page.table_labels.column_3 }}</th>
+      <th scope="col" id="#totalTotal">{{ page.table_labels.column_3 }}</th>
     </tr>
   </thead>
   <tbody>
@@ -20,9 +20,9 @@
   </tfoot>
 </table>
 <div class="btn-group" role="group" id="tableControl">
-  <button onclick="javascript:window.print()" type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
-  <button type="button" class="btn btn-secondary toggle-visible" id="tableReset"><i class="fas fa-sync"></i></button>
-  <button href="#conclusion" type="button" class="btn btn-secondary calculate-me toggle-visible"><i class="fas fa-calculator"></i></button>
+  <button onclick="javascript:window.print()" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="{{ page.table_labels.print_tooltip }}"><i class="fas fa-print"></i></button>
+  <button type="button" class="btn btn-secondary toggle-visible" id="tableReset" data-toggle="tooltip" data-placement="bottom" title="{{ page.table_labels.reset_tooltip }}"><i class="fas fa-sync"></i></button>
+  <button href="#conclusion" type="button" class="btn btn-secondary calculate-me toggle-visible" data-toggle="tooltip" data-placement="bottom" title="{{ page.table_labels.calculate_tooltip }}"><i class="fas fa-calculator"></i></button>
 </div>
 
 <div class="row">

@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>UX Alchemy</title>
+<title>UX Discovery</title>
 <meta name="description" content="DEPT Tools">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -52,7 +52,7 @@
         <a class="nav-link" href="/raid">RAID</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/recipe">Alchemy</a>
+        <a class="nav-link" href="/recipe">Recipes</a>
       </li>
     </ul>
   </div>
@@ -64,7 +64,7 @@
       <div class="col">
         <div class="header-container">
           <div class="header-title">
-            <h1>UX Alchemy</h1>
+            <h1>UX Discovery</h1>
           </div>
         </div>
       </div>
@@ -523,9 +523,9 @@
   <thead class="bg-dark">
     <tr>
       <th scope="col">Task</th>
-      <th scope="col">Time (days)</th>
+      <th scope="col">Time (Days)</th>
       <th scope="col">Rate</th>
-      <th scope="col" id="#totalTotal">Total</th>
+      <th scope="col" id="#totalTotal">Rate</th>
     </tr>
   </thead>
   <tbody>
@@ -541,9 +541,9 @@
   </tfoot>
 </table>
 <div class="btn-group" role="group" id="tableControl">
-  <button onclick="javascript:window.print()" type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
-  <button type="button" class="btn btn-secondary toggle-visible" id="tableReset"><i class="fas fa-sync"></i></button>
-  <button href="#conclusion" type="button" class="btn btn-secondary calculate-me toggle-visible"><i class="fas fa-calculator"></i></button>
+  <button onclick="javascript:window.print()" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Print"><i class="fas fa-print"></i></button>
+  <button type="button" class="btn btn-secondary toggle-visible" id="tableReset" data-toggle="tooltip" data-placement="bottom" title="Reset"><i class="fas fa-sync"></i></button>
+  <button href="#conclusion" type="button" class="btn btn-secondary calculate-me toggle-visible" data-toggle="tooltip" data-placement="bottom" title="Calculate"><i class="fas fa-calculator"></i></button>
 </div>
 
 <div class="row">
@@ -557,7 +557,6 @@
     </div>
   </div>
 </section>
-
 
 
 
