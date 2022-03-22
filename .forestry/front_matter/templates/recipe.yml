@@ -53,3 +53,5 @@ fields:
       required: false
     label: Calculate Tooltip
   label: Table Labels
+pages:
+- recipe.html
