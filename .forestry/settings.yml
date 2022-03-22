@@ -4,10 +4,9 @@ auto_deploy: false
 admin_path: "/dept-recipe/recipe/admin"
 webhook_url: 
 sections:
-- type: directory
-  path: ''
-  label: Pages
-  create: all
+- type: document
+  path: recipe.html
+  label: Recipes
   match: "**/*"
 - type: directory
   path: _posts
